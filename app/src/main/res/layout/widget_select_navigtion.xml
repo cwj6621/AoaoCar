@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="280dp"
+        android:background="@drawable/bg_dialog_shape"
+        android:orientation="vertical"
+        android:padding="3dp">
+        <ListView
+            android:id="@+id/lv_navigtion"
+            android:layout_width="match_parent"
+            android:divider="@color/backgroudcolor"
+            android:dividerHeight="0.5dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>

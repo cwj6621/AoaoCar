@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="@dimen/spacing_tinyer"
+    android:layout_height="wrap_content">
+ <com.jianguo.aoaocar.view.ImageBorderView
+     android:id="@+id/iv_car_icon"
+     android:layout_width="80dp"
+     android:layout_gravity="center_horizontal"
+     android:scaleType="fitXY"
+     android:layout_height="45dp" />
+    <TextView
+        android:id="@+id/tv_car_name"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/font_small"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:textColor="@color/colorGreenPrimary"
+        android:layout_height="wrap_content" />
+</LinearLayout>

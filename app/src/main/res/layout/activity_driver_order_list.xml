@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/widget_navigation_title"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/spacing_mimimum"
+        android:layout_height="50dp">
+        <com.jianguo.aoaocar.view.SelectConditionView
+            android:id="@+id/rb_creditor_condition1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:layout_marginBottom="@dimen/spacing_tiny"
+            android:background="@color/backgroudcolor"
+            android:layout_height="match_parent"></View>
+        <com.jianguo.aoaocar.view.SelectConditionView
+            android:id="@+id/rb_creditor_condition2"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.it.jianguo.common.xlistview.XListView
+        android:id="@+id/xlv_driver_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.it.jianguo.common.xlistview.XListView>
+</LinearLayout>

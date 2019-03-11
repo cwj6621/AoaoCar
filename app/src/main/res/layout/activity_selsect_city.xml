@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroudcolor"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/header"
+        layout="@layout/widget_navigation_title" />
+    <com.jianguo.aoaocar.view.ClearableEditText
+        android:id="@+id/filter_edit_city_name"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/bg_search_bar"
+        android:drawableLeft="@mipmap/icon_search"
+        android:drawablePadding="15dp"
+        android:hint="城市/拼音"
+        android:paddingLeft="30dp"
+        android:paddingRight="5dp"
+        android:textColorHint="@color/colorHint"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dp" >
+        <ListView
+            android:id="@+id/lv_city_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:scrollbars="none"
+            android:background="@color/white"
+            android:divider="@null" />
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_diglog_rediu"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25.0dip"
+            android:visibility="invisible" />
+
+        <com.it.jianguo.common.sortlist.SideBar
+            android:id="@+id/sidrbar_fix_city"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

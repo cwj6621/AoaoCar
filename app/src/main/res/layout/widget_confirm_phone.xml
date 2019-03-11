@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingBottom="30dp"
+    android:layout_height="match_parent">
+   <ImageView
+       android:id="@+id/iv_take_photo"
+       android:layout_width="280dp"
+       android:scaleType="fitXY"
+       android:layout_marginTop="150dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginLeft="@dimen/activity_horizontal_margin"
+       android:layout_marginRight="@dimen/activity_horizontal_margin"
+       android:layout_height="150dp" />
+    <TextView
+        android:id="@+id/tv_pass_valitar_login"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_smaller" />
+    <Button
+        android:id="@+id/btn_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/button_height_short"
+        android:background="@drawable/bg_selector_button"
+        android:gravity="center"
+        android:text="@string/take_photo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_smaller" />
+</RelativeLayout>

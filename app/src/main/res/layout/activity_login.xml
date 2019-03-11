@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_navigation_title"></include>
+
+        <LinearLayout
+            android:id="@+id/ll_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/button_height_short"
+            android:padding="@dimen/button_height_short">
+
+            <EditText
+                android:id="@+id/et_login_account"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:inputType="phone"
+                android:hint="@string/mobile"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_smaller" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/backgroudcolor"></View>
+
+            <EditText
+                android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/black"
+                android:hint="@string/login_password"
+                android:textSize="@dimen/font_smaller" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/backgroudcolor"></View>
+
+            <Button
+                android:id="@+id/btn_sure_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/button_height_short"
+                android:background="@drawable/bg_selector_button"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_smaller" />
+            <TextView
+                android:id="@+id/tv_forget_pass"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="@string/forget_password"
+                android:textColor="@color/colorBluePrimary"
+                android:textSize="@dimen/font_smaller" />
+        </LinearLayout>
+
+</LinearLayout>

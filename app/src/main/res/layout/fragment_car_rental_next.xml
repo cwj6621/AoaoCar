@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+       android:id="@+id/fl_all_car_picture"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_feedbcak_shape"
+        android:layout_margin="@dimen/spacing_small"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@mipmap/icon_add"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/colorHint"
+                android:text="点击上传车辆全身图片"
+                android:textSize="@dimen/font_smaller" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_all_car_picture"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_selector_button"
+        android:gravity="center"
+        android:layout_margin="@dimen/button_height_normal"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_smaller" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/button_height_short"
+    android:paddingRight="@dimen/button_height_short"
+    android:background="@color/white"
+    android:layout_height="50dp">
+    <TextView
+        android:id="@+id/tv_selsect_condition_item"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/font_small"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="类型"
+        android:textColor="@color/colorHint"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/lv_selsect_condition_item"
+        android:layout_width="20dp"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/iocn_dui_hao"
+        android:layout_height="20dp" />
+
+</RelativeLayout>

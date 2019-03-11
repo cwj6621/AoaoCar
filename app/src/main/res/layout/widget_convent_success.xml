@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minWidth="320dp"
+    android:background="@drawable/bg_dialog_shape"
+    android:orientation="vertical"
+    android:padding="3dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:text="恭喜您！已预约成功"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_medium" />
+    <TextView
+        android:id="@+id/tv_car_name_and_lencense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="一汽大众  沪A001100"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_smaller" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:background="@mipmap/icon_convent_success"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_car_check_nitice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:gravity="center"
+        android:text="请于01月03日12.00点前\n在夏威夷网点取车"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_smalls" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/spacing_small"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:background="@drawable/banner_show_defauit_bg"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_instruction1"
+            android:layout_width="match_parent"
+            android:text="开车前，务必看续航电量，请确认轮胎是否没气，鼓包，起皮，破损现象，有任何问题，请联系客服"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/spacing_small"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:background="@drawable/banner_show_defauit_bg"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_instruction2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跨区域还车需要收取跨区域服务费"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/backgroudcolor"
+        android:layout_marginTop="8dp"
+        android:layout_height="1dp"></View>
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/colorGreenPrimary"
+        android:textSize="@dimen/font_smaller" />
+</LinearLayout>

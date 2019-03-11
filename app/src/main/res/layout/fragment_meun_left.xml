@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+<com.it.jianguo.common.commonwidget.ElasticScrollView
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/teal_background"
+            android:layout_height="180dp" >
+        <com.jianguo.aoaocar.view.RoundImageView
+            android:id="@+id/riv_head"
+            android:layout_width="70dp"
+             android:layout_height="70dp"
+            android:src="@mipmap/icon_head_boy"
+            android:scaleType="centerCrop"
+            app:border_in_width="0dp"
+            app:border_out_width="0dp"
+            app:border_outcolor="@color/transparent"
+            app:border_incolor="@color/transparent"
+            />
+                  
+       <TextView
+           android:id="@+id/lv_user_name"
+           android:layout_width="wrap_content"
+           android:text="点击完善个人资料 >"
+           android:textSize="@dimen/font_smaller"
+           android:layout_marginTop="@dimen/activity_horizontal_margin"
+           android:textColor="@color/white"
+           android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <com.it.jianguo.common.commonwidget.NoScrollListview
+            android:id="@+id/lv_user_center"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_marginTop="@dimen/button_height_short"
+            android:divider="@null"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.it.jianguo.common.commonwidget.ElasticScrollView>
+</LinearLayout>

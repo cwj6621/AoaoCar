@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/widget_short_rent_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_take_car"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/iv_take_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/iocn_take_car_dot" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_take_car"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:text="@string/take_car_dot"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_smaller" />
+            <TextView
+                android:id="@+id/tv_take_car_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="@string/input_take_car"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_smaller" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgroudcolor"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_refund_car"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/iv_refund_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_refund_car_dot" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_refund_car"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:text="@string/refund_car_dot"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_smaller" />
+            <TextView
+                android:id="@+id/tv_refund_car_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="@string/input_refund_car"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_smaller" />
+        </RelativeLayout>
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_height="120dp">
+   <LinearLayout
+       android:id="@+id/rl_take_car_time"
+       android:layout_width="wrap_content"
+       android:orientation="vertical"
+       android:layout_alignParentLeft="true"
+       android:layout_centerVertical="true"
+       android:gravity="center"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/take_car_time"
+           android:textColor="@color/black"
+           android:textSize="@dimen/font_smaller" />
+       <TextView
+           android:id="@+id/et_take_car_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="@string/please_select"
+           android:textColorHint="@color/colorHint"
+           android:layout_marginTop="@dimen/activity_horizontal_margin"
+           android:textColor="@color/black"
+           android:textSize="@dimen/font_small" />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="150dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总时长"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_small" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/backgroudcolor"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_height="1dp"></View>
+
+        <TextView
+            android:id="@+id/tv_sum_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2:00:00"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_smaller" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rl_refund_car_time"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refund_car_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_smaller" />
+        <TextView
+            android:id="@+id/et_refund_car_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/please_select"
+            android:textColorHint="@color/colorHint"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_select_car"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/button_height_short"
+        android:background="@drawable/bg_selector_button"
+        android:gravity="center"
+        android:text="@string/select_car"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_smaller" />
+
+</LinearLayout>

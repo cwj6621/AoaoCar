@@ -1,0 +1,1037 @@
+{ "city_info" :[
+    {
+        "area_name": "北京市"
+    },
+    {
+        "area_name": "天津市"
+    },
+    {
+        "area_name": "石家庄市"
+    },
+    {
+        "area_name": "唐山市"
+    },
+    {
+        "area_name": "秦皇岛市"
+    },
+    {
+        "area_name": "邯郸市"
+    },
+    {
+        "area_name": "邢台市"
+    },
+    {
+        "area_name": "保定市"
+    },
+    {
+        "area_name": "张家口市"
+    },
+    {
+        "area_name": "承德市"
+    },
+    {
+        "area_name": "沧州市"
+    },
+    {
+        "area_name": "廊坊市"
+    },
+    {
+        "area_name": "衡水市"
+    },
+    {
+        "area_name": "太原市"
+    },
+    {
+        "area_name": "大同市"
+    },
+    {
+        "area_name": "阳泉市"
+    },
+    {
+        "area_name": "长治市"
+    },
+    {
+        "area_name": "晋城市"
+    },
+    {
+        "area_name": "朔州市"
+    },
+    {
+        "area_name": "晋中市"
+    },
+    {
+        "area_name": "运城市"
+    },
+    {
+        "area_name": "忻州市"
+    },
+    {
+        "area_name": "临汾市"
+    },
+    {
+        "area_name": "吕梁市"
+    },
+    {
+        "area_name": "呼和浩特市"
+    },
+    {
+        "area_name": "包头市"
+    },
+    {
+        "area_name": "乌海市"
+    },
+    {
+        "area_name": "赤峰市"
+    },
+    {
+        "area_name": "通辽市"
+    },
+    {
+        "area_name": "鄂尔多斯市"
+    },
+    {
+        "area_name": "呼伦贝尔市"
+    },
+    {
+        "area_name": "巴彦淖尔市"
+    },
+    {
+        "area_name": "乌兰察布市"
+    },
+    {
+        "area_name": "兴安盟"
+    },
+    {
+        "area_name": "锡林郭勒盟"
+    },
+    {
+        "area_name": "阿拉善盟"
+    },
+    {
+        "area_name": "沈阳市"
+    },
+    {
+        "area_name": "大连市"
+    },
+    {
+        "area_name": "鞍山市"
+    },
+    {
+        "area_name": "抚顺市"
+    },
+    {
+        "area_name": "本溪市"
+    },
+    {
+        "area_name": "丹东市"
+    },
+    {
+        "area_name": "锦州市"
+    },
+    {
+        "area_name": "营口市"
+    },
+    {
+        "area_name": "阜新市"
+    },
+    {
+        "area_name": "辽阳市"
+    },
+    {
+        "area_name": "盘锦市"
+    },
+    {
+        "area_name": "铁岭市"
+    },
+    {
+        "area_name": "朝阳市"
+    },
+    {
+        "area_name": "葫芦岛市"
+    },
+    {
+        "area_name": "长春市"
+    },
+    {
+        "area_name": "吉林市"
+    },
+    {
+        "area_name": "四平市"
+    },
+    {
+        "area_name": "辽源市"
+    },
+    {
+        "area_name": "通化市"
+    },
+    {
+        "area_name": "白山市"
+    },
+    {
+        "area_name": "松原市"
+    },
+    {
+        "area_name": "白城市"
+    },
+    {
+        "area_name": "延边朝鲜族自治州"
+    },
+    {
+        "area_name": "哈尔滨市"
+    },
+    {
+        "area_name": "齐齐哈尔市"
+    },
+    {
+        "area_name": "鸡西市"
+    },
+    {
+        "area_name": "鹤岗市"
+    },
+    {
+        "area_name": "双鸭山市"
+    },
+    {
+        "area_name": "大庆市"
+    },
+    {
+        "area_name": "伊春市"
+    },
+    {
+        "area_name": "佳木斯市"
+    },
+    {
+        "area_name": "七台河市"
+    },
+    {
+        "area_name": "牡丹江市"
+    },
+    {
+        "area_name": "黑河市"
+    },
+    {
+        "area_name": "绥化市"
+    },
+    {
+        "area_name": "大兴安岭地区"
+    },
+    {
+        "area_name": "上海市"
+    },
+    {
+        "area_name": "南京市"
+    },
+    {
+        "area_name": "无锡市"
+    },
+    {
+        "area_name": "徐州市"
+    },
+    {
+        "area_name": "常州市"
+    },
+    {
+        "area_name": "苏州市"
+    },
+    {
+        "area_name": "南通市"
+    },
+    {
+        "area_name": "连云港市"
+    },
+    {
+        "area_name": "淮安市"
+    },
+    {
+        "area_name": "盐城市"
+    },
+    {
+        "area_name": "扬州市"
+    },
+    {
+        "area_name": "镇江市"
+    },
+    {
+        "area_name": "泰州市"
+    },
+    {
+        "area_name": "宿迁市"
+    },
+    {
+        "area_name": "杭州市"
+    },
+    {
+        "area_name": "宁波市"
+    },
+    {
+        "area_name": "温州市"
+    },
+    {
+        "area_name": "嘉兴市"
+    },
+    {
+        "area_name": "湖州市"
+    },
+    {
+        "area_name": "绍兴市"
+    },
+    {
+        "area_name": "金华市"
+    },
+    {
+        "area_name": "衢州市"
+    },
+    {
+        "area_name": "舟山市"
+    },
+    {
+        "area_name": "台州市"
+    },
+    {
+        "area_name": "丽水市"
+    },
+    {
+        "area_name": "合肥市"
+    },
+    {
+        "area_name": "芜湖市"
+    },
+    {
+        "area_name": "蚌埠市"
+    },
+    {
+        "area_name": "淮南市"
+    },
+    {
+        "area_name": "马鞍山市"
+    },
+    {
+        "area_name": "淮北市"
+    },
+    {
+        "area_name": "铜陵市"
+    },
+    {
+        "area_name": "安庆市"
+    },
+    {
+        "area_name": "黄山市"
+    },
+    {
+        "area_name": "滁州市"
+    },
+    {
+        "area_name": "阜阳市"
+    },
+    {
+        "area_name": "宿州市"
+    },
+    {
+        "area_name": "巢湖市"
+    },
+    {
+        "area_name": "六安市"
+    },
+    {
+        "area_name": "亳州市"
+    },
+    {
+        "area_name": "池州市"
+    },
+    {
+        "area_name": "宣城市"
+    },
+    {
+        "area_name": "福州市"
+    },
+    {
+        "area_name": "厦门市"
+    },
+    {
+        "area_name": "莆田市"
+    },
+    {
+        "area_name": "三明市"
+    },
+    {
+        "area_name": "泉州市"
+    },
+    {
+        "area_name": "漳州市"
+    },
+    {
+        "area_name": "南平市"
+    },
+    {
+        "area_name": "龙岩市"
+    },
+    {
+        "area_name": "宁德市"
+    },
+    {
+        "area_name": "南昌市"
+    },
+    {
+        "area_name": "景德镇市"
+    },
+    {
+        "area_name": "萍乡市"
+    },
+    {
+        "area_name": "九江市"
+    },
+    {
+        "area_name": "新余市"
+    },
+    {
+        "area_name": "鹰潭市"
+    },
+    {
+        "area_name": "赣州市"
+    },
+    {
+        "area_name": "吉安市"
+    },
+    {
+        "area_name": "宜春市"
+    },
+    {
+        "area_name": "抚州市"
+    },
+    {
+        "area_name": "上饶市"
+    },
+    {
+        "area_name": "济南市"
+    },
+    {
+        "area_name": "青岛市"
+    },
+    {
+        "area_name": "淄博市"
+    },
+    {
+        "area_name": "枣庄市"
+    },
+    {
+        "area_name": "东营市"
+    },
+    {
+        "area_name": "烟台市"
+    },
+    {
+        "area_name": "潍坊市"
+    },
+    {
+        "area_name": "济宁市"
+    },
+    {
+        "area_name": "泰安市"
+    },
+    {
+        "area_name": "威海市"
+    },
+    {
+        "area_name": "日照市"
+    },
+    {
+        "area_name": "莱芜市"
+    },
+    {
+        "area_name": "临沂市"
+    },
+    {
+        "area_name": "德州市"
+    },
+    {
+        "area_name": "聊城市"
+    },
+    {
+        "area_name": "滨州市"
+    },
+    {
+        "area_name": "荷泽市"
+    },
+    {
+        "area_name": "郑州市"
+    },
+    {
+        "area_name": "开封市"
+    },
+    {
+        "area_name": "洛阳市"
+    },
+    {
+        "area_name": "平顶山市"
+    },
+    {
+        "area_name": "安阳市"
+    },
+    {
+        "area_name": "鹤壁市"
+    },
+    {
+        "area_name": "新乡市"
+    },
+    {
+        "area_name": "焦作市"
+    },
+    {
+        "area_name": "濮阳市"
+    },
+    {
+        "area_name": "许昌市"
+    },
+    {
+        "area_name": "漯河市"
+    },
+    {
+        "area_name": "三门峡市"
+    },
+    {
+        "area_name": "南阳市"
+    },
+    {
+        "area_name": "商丘市"
+    },
+    {
+        "area_name": "信阳市"
+    },
+    {
+        "area_name": "周口市"
+    },
+    {
+        "area_name": "驻马店市"
+    },
+    {
+        "area_name": "武汉市"
+    },
+    {
+        "area_name": "黄石市"
+    },
+    {
+        "area_name": "十堰市"
+    },
+    {
+        "area_name": "宜昌市"
+    },
+    {
+        "area_name": "襄樊市"
+    },
+    {
+        "area_name": "鄂州市"
+    },
+    {
+        "area_name": "荆门市"
+    },
+    {
+        "area_name": "孝感市"
+    },
+    {
+        "area_name": "荆州市"
+    },
+    {
+        "area_name": "黄冈市"
+    },
+    {
+        "area_name": "咸宁市"
+    },
+    {
+        "area_name": "随州市"
+    },
+    {
+        "area_name": "恩施土家族苗族自治州"
+    },
+    {
+        "area_name": "神农架"
+    },
+    {
+        "area_name": "长沙市"
+    },
+    {
+        "area_name": "株洲市"
+    },
+    {
+        "area_name": "湘潭市"
+    },
+    {
+        "area_name": "衡阳市"
+    },
+    {
+        "area_name": "邵阳市"
+    },
+    {
+        "area_name": "岳阳市"
+    },
+    {
+        "area_name": "常德市"
+    },
+    {
+        "area_name": "张家界市"
+    },
+    {
+        "area_name": "益阳市"
+    },
+    {
+        "area_name": "郴州市"
+    },
+    {
+        "area_name": "永州市"
+    },
+    {
+        "area_name": "怀化市"
+    },
+    {
+        "area_name": "娄底市"
+    },
+    {
+        "area_name": "湘西土家族苗族自治州"
+    },
+    {
+        "area_name": "广州市"
+    },
+    {
+        "area_name": "韶关市"
+    },
+    {
+        "area_name": "深圳市"
+    },
+    {
+        "area_name": "珠海市"
+    },
+    {
+        "area_name": "汕头市"
+    },
+    {
+        "area_name": "佛山市"
+    },
+    {
+        "area_name": "江门市"
+    },
+    {
+        "area_name": "湛江市"
+    },
+    {
+        "area_name": "茂名市"
+    },
+    {
+        "area_name": "肇庆市"
+    },
+    {
+        "area_name": "惠州市"
+    },
+    {
+        "area_name": "梅州市"
+    },
+    {
+        "area_name": "汕尾市"
+    },
+    {
+        "area_name": "河源市"
+    },
+    {
+        "area_name": "阳江市"
+    },
+    {
+        "area_name": "清远市"
+    },
+    {
+        "area_name": "东莞市"
+    },
+    {
+        "area_name": "中山市"
+    },
+    {
+        "area_name": "潮州市"
+    },
+    {
+        "area_name": "揭阳市"
+    },
+    {
+        "area_name": "云浮市"
+    },
+    {
+        "area_name": "南宁市"
+    },
+    {
+        "area_name": "柳州市"
+    },
+    {
+        "area_name": "桂林市"
+    },
+    {
+        "area_name": "梧州市"
+    },
+    {
+        "area_name": "北海市"
+    },
+    {
+        "area_name": "防城港市"
+    },
+    {
+        "area_name": "钦州市"
+    },
+    {
+        "area_name": "贵港市"
+    },
+    {
+        "area_name": "玉林市"
+    },
+    {
+        "area_name": "百色市"
+    },
+    {
+        "area_name": "贺州市"
+    },
+    {
+        "area_name": "河池市"
+    },
+    {
+        "area_name": "来宾市"
+    },
+    {
+        "area_name": "崇左市"
+    },
+    {
+        "area_name": "海口市"
+    },
+    {
+        "area_name": "三亚市"
+    },
+    {
+        "area_name": "重庆市"
+    },
+    {
+        "area_name": "成都市"
+    },
+    {
+        "area_name": "自贡市"
+    },
+    {
+        "area_name": "攀枝花市"
+    },
+    {
+        "area_name": "泸州市"
+    },
+    {
+        "area_name": "德阳市"
+    },
+    {
+        "area_name": "绵阳市"
+    },
+    {
+        "area_name": "广元市"
+    },
+    {
+        "area_name": "遂宁市"
+    },
+    {
+        "area_name": "内江市"
+    },
+    {
+        "area_name": "乐山市"
+    },
+    {
+        "area_name": "南充市"
+    },
+    {
+        "area_name": "眉山市"
+    },
+    {
+        "area_name": "宜宾市"
+    },
+    {
+        "area_name": "广安市"
+    },
+    {
+        "area_name": "达州市"
+    },
+    {
+        "area_name": "雅安市"
+    },
+    {
+        "area_name": "巴中市"
+    },
+    {
+        "area_name": "资阳市"
+    },
+    {
+        "area_name": "阿坝藏族羌族自治州"
+    },
+    {
+        "area_name": "甘孜藏族自治州"
+    },
+    {
+        "area_name": "凉山彝族自治州"
+    },
+    {
+        "area_name": "贵阳市"
+    },
+    {
+        "area_name": "六盘水市"
+    },
+    {
+        "area_name": "遵义市"
+    },
+    {
+        "area_name": "安顺市"
+    },
+    {
+        "area_name": "铜仁地区"
+    },
+    {
+        "area_name": "黔西南布依族苗族自治州"
+    },
+    {
+        "area_name": "毕节地区"
+    },
+    {
+        "area_name": "黔东南苗族侗族自治州"
+    },
+    {
+        "area_name": "黔南布依族苗族自治州"
+    },
+    {
+        "area_name": "昆明市"
+    },
+    {
+        "area_name": "曲靖市"
+    },
+    {
+        "area_name": "玉溪市"
+    },
+    {
+        "area_name": "保山市"
+    },
+    {
+        "area_name": "昭通市"
+    },
+    {
+        "area_name": "丽江市"
+    },
+    {
+        "area_name": "思茅市"
+    },
+    {
+        "area_name": "临沧市"
+    },
+    {
+        "area_name": "楚雄彝族自治州"
+    },
+    {
+        "area_name": "红河哈尼族彝族自治州"
+    },
+    {
+        "area_name": "文山壮族苗族自治州"
+    },
+    {
+        "area_name": "西双版纳傣族自治州"
+    },
+    {
+        "area_name": "大理白族自治州"
+    },
+    {
+        "area_name": "德宏傣族景颇族自治州"
+    },
+    {
+        "area_name": "怒江傈僳族自治州"
+    },
+    {
+        "area_name": "迪庆藏族自治州"
+    },
+    {
+        "area_name": "拉萨市"
+    },
+    {
+        "area_name": "昌都地区"
+    },
+    {
+        "area_name": "山南地区"
+    },
+    {
+        "area_name": "日喀则地区"
+    },
+    {
+        "area_name": "那曲地区"
+    },
+    {
+        "area_name": "阿里地区"
+    },
+    {
+        "area_name": "林芝地区"
+    },
+    {
+        "area_name": "西安市"
+    },
+    {
+        "area_name": "铜川市"
+    },
+    {
+        "area_name": "宝鸡市"
+    },
+    {
+        "area_name": "咸阳市"
+    },
+    {
+        "area_name": "渭南市"
+    },
+    {
+        "area_name": "延安市"
+    },
+    {
+        "area_name": "汉中市"
+    },
+    {
+        "area_name": "榆林市"
+    },
+    {
+        "area_name": "安康市"
+    },
+    {
+        "area_name": "商洛市"
+    },
+    {
+        "area_name": "兰州市"
+    },
+    {
+        "area_name": "嘉峪关市"
+    },
+    {
+        "area_name": "金昌市"
+    },
+    {
+        "area_name": "白银市"
+    },
+    {
+        "area_name": "天水市"
+    },
+    {
+        "area_name": "武威市"
+    },
+    {
+        "area_name": "张掖市"
+    },
+    {
+        "area_name": "平凉市"
+    },
+    {
+        "area_name": "酒泉市"
+    },
+    {
+        "area_name": "庆阳市"
+    },
+    {
+        "area_name": "定西市"
+    },
+    {
+        "area_name": "陇南市"
+    },
+    {
+        "area_name": "临夏回族自治州"
+    },
+    {
+        "area_name": "甘南藏族自治州"
+    },
+    {
+        "area_name": "西宁市"
+    },
+    {
+        "area_name": "海东地区"
+    },
+    {
+        "area_name": "海北藏族自治州"
+    },
+    {
+        "area_name": "黄南藏族自治州"
+    },
+    {
+        "area_name": "海南藏族自治州"
+    },
+    {
+        "area_name": "果洛藏族自治州"
+    },
+    {
+        "area_name": "玉树藏族自治州"
+    },
+    {
+        "area_name": "海西蒙古族藏族自治州"
+    },
+    {
+        "area_name": "银川市"
+    },
+    {
+        "area_name": "石嘴山市"
+    },
+    {
+        "area_name": "吴忠市"
+    },
+    {
+        "area_name": "固原市"
+    },
+    {
+        "area_name": "中卫市"
+    },
+    {
+        "area_name": "乌鲁木齐市"
+    },
+    {
+        "area_name": "克拉玛依市"
+    },
+    {
+        "area_name": "吐鲁番地区"
+    },
+    {
+        "area_name": "哈密地区"
+    },
+    {
+        "area_name": "昌吉回族自治州"
+    },
+    {
+        "area_name": "博尔塔拉蒙古自治州"
+    },
+    {
+        "area_name": "巴音郭楞蒙古自治州"
+    },
+    {
+        "area_name": "阿克苏地区"
+    },
+    {
+        "area_name": "克孜勒苏柯尔克孜自治州"
+    },
+    {
+        "area_name": "喀什地区"
+    },
+    {
+        "area_name": "和田地区"
+    },
+    {
+        "area_name": "伊犁哈萨克自治州"
+    },
+    {
+        "area_name": "塔城地区"
+    },
+    {
+        "area_name": "阿勒泰地区"
+    },
+    {
+        "area_name": "石河子市"
+    },
+    {
+        "area_name": "阿拉尔市"
+    },
+    {
+        "area_name": "图木舒克市"
+    },
+    {
+        "area_name": "五家渠市"
+    },
+    {
+        "area_name": "香港特别行政区"
+    },
+    {
+        "area_name": "澳门特别行政区"
+    },
+    {
+        "area_name": "台湾省"
+    }
+]}

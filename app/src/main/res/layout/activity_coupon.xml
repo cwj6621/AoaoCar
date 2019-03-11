@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/widget_navigation_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:layout_height="45dp">
+  <EditText
+      android:id="@+id/et_exchange_code"
+      android:layout_width="0dp"
+      android:background="@drawable/bg_edit_money_shape"
+      android:layout_weight="4"
+      android:inputType="number"
+      android:textSize="@dimen/font_smaller"
+      android:textColor="@color/black"
+      android:hint="@string/input_exchange_code"
+      android:maxLength="6"
+      android:paddingLeft="@dimen/activity_horizontal_margin"
+      android:textColorHint="@color/colorHint"
+      android:gravity="center|left"
+      android:layout_height="40dp" />
+        <Button
+            android:id="@+id/btn_exchange"
+            android:layout_width="0dp"
+            android:background="@drawable/bg_sure_coupon_shape"
+            android:layout_weight="1"
+            android:text="@string/exchange"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_height="30dp" />
+</LinearLayout>
+
+   <com.it.jianguo.common.xlistview.XListView
+       android:id="@+id/lv_coupon"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+</LinearLayout>

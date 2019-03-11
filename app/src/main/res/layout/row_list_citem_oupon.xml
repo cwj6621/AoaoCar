@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+
+    <com.jianguo.aoaocar.view.coupons.CouponView
+        android:id="@+id/couponiew"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/coupons_background"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:cv_dash_line_color="@android:color/white"
+        app:cv_dash_line_gap="10dp"
+        app:cv_dash_line_height="2dp"
+        app:cv_dash_line_length="10dp"
+        app:cv_dash_line_margin_bottom="5dp"
+        app:cv_dash_line_margin_left="50dp"
+        app:cv_dash_line_margin_right="50dp"
+        app:cv_dash_line_margin_top="5dp"
+        app:cv_semicircle_color="@color/backgroudcolor"
+        app:cv_semicircle_gap="8dp"
+        app:cv_semicircle_radius="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/spacing_small"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_coupons_value"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="32sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_coupons_rule"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@+id/tv_coupons_value"
+                android:layout_marginLeft="@dimen/button_height_large"
+                 android:layout_alignParentTop="true"
+                android:textSize="@dimen/font_smaller"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_coupons_overtime"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@+id/tv_coupons_value"
+                android:layout_marginLeft="@dimen/button_height_large"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/font_smaller"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </com.jianguo.aoaocar.view.coupons.CouponView>
+</LinearLayout>

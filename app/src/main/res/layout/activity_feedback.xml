@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/widget_navigation_title"></include>
+    <EditText
+        android:id="@+id/et_feedback"
+      android:layout_height="200dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:maxLength="200"
+        android:background="@drawable/bg_feedbcak_shape"
+        android:layout_width="match_parent"
+        android:hint="@string/input_feedback"
+        android:padding="@dimen/activity_vertical_margin"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/font_smaller"
+        android:gravity="left"
+        android:textColor="@color/black" />
+ <TextView
+     android:id="@+id/tv_record_length"
+     android:layout_width="match_parent"
+     android:gravity="right|center"
+     android:paddingRight="@dimen/activity_vertical_margin"
+     android:textColor="@color/black"
+     android:textSize="@dimen/font_smaller"
+     android:text="200/200"
+     android:layout_height="45dp" />
+</LinearLayout>

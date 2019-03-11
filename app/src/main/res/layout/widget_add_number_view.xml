@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="105dp"
+    android:layout_height="35dp">
+  <Button
+      android:id="@+id/btn_reduct"
+      android:layout_width="35dp"
+      android:text="—"
+      android:textColor="@color/colorHint"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:textSize="@dimen/font_normal"
+      android:background="@color/toast_stroke_gray"
+      android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="35dp"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/black"
+        android:text="1"
+        android:gravity="center"
+        android:background="@color/backgroudcolor"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="35dp"
+        android:text="+"
+        android:textColor="@color/colorHint"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/font_normal"
+        android:background="@color/toast_stroke_gray"
+        android:layout_height="match_parent" />
+</LinearLayout>

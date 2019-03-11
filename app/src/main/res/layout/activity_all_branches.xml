@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+   <include
+        layout="@layout/widget_right_select_head"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/spacing_mimimum"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/left_listview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scrollbars="none"
+            android:divider="@null"></ListView>
+        <com.jianguo.aoaocar.view.PinnedHeaderListView
+            android:id="@+id/pinnedListView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:dividerHeight="1dp"
+            android:divider="@color/backgroudcolor"
+            android:background="@color/white"></com.jianguo.aoaocar.view.PinnedHeaderListView>
+    </LinearLayout>
+</LinearLayout>

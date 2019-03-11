@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_height="60dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center|left"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_car_name"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorHint"
+        android:textSize="@dimen/font_smaller"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorHint"
+            android:text="无库存"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:textSize="@dimen/font_small"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+    <TextView
+        android:id="@+id/tv_car_price"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorHint"
+        android:textSize="@dimen/font_small"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

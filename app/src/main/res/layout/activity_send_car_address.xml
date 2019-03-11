@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/widget_navigation_title"></include>
+  <LinearLayout
+      android:id="@+id/search_view"
+      android:layout_width="match_parent"
+      android:background="@color/colorOrangePrimary"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_height="40dp">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:background="@mipmap/icon_search"
+          android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_small"
+        android:layout_marginLeft="@dimen/spacing_tinyer"
+        android:text="@string/take_car_address"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="0dp">
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.jianguo.aoaocar.view.MapCenterPotion
+        android:id="@+id/bt_mapCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+  </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_address"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@color/backgroudcolor"
+        android:dividerHeight="@dimen/spacing_mimimum"
+        android:layout_height="0dp"/>
+</LinearLayout>

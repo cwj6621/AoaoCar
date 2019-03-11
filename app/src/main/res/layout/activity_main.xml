@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor"
+    tools:context="com.jianguo.aoaocar.activity.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/id_drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_invest_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/widget_main_title"></include>
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/map_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    ></com.baidu.mapapi.map.MapView>
+                  <com.jianguo.aoaocar.view.MapCenterPotion
+                      android:id="@+id/bt_mapCenter"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      />
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+                    <include
+                        android:id="@+id/view_car_show"
+                        layout="@layout/widget_car_type_show"/>
+                    <include
+                        android:id="@+id/view_car_type"
+                        layout="@layout/widget_car_type_banner"
+                        android:visibility="gone"
+                        ></include>
+                </LinearLayout>
+                      <include
+                          android:visibility="visible"
+                          layout="@layout/widget_main_sliding"></include>
+                       <include
+                           android:visibility="gone"
+                           layout="@layout/widget_near_car_popup_window"></include>
+
+              </RelativeLayout>
+        </RelativeLayout>
+
+        </LinearLayout>
+        <fragment
+            android:id="@+id/id_right_menu"
+            android:name="com.jianguo.aoaocar.fragment.MenuRightFragment"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:tag="LEFT"
+            tools:layout="@layout/fragment_meun_left" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

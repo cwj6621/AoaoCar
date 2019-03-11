@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/rl_iv"
+        android:layout_width="15dp"
+        android:background="@drawable/icon_warm"
+        android:layout_alignParentLeft="true"
+        android:layout_height="15dp"  ></ImageView>
+    <com.jianguo.aoaocar.view.DashedLineView
+        android:id="@+id/iv_record_line"
+        android:layout_width="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="7dp"
+        android:layout_below="@+id/rl_iv"
+        android:layerType="software"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:id="@+id/tv_etection_state_name"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_tinyer"
+        android:layout_toRightOf="@+id/rl_iv"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_etection_state"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorHint"
+        android:textSize="@dimen/font_small"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

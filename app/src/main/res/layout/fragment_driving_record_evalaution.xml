@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_slide_panel_bottom_shape"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="点击星星打分"
+        android:textColor="@color/colorHint"
+        android:textSize="@dimen/font_small" />
+
+    <com.jianguo.aoaocar.view.SimpleRatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="@dimen/spacing_tiny"
+        app:srb_borderColor="@color/colorHint"
+        app:srb_fillColor="@color/colorOrangePrimary"
+        app:srb_numberOfStars="5"
+        app:srb_pressedBorderColor="@color/draw_gray"
+        app:srb_pressedFillColor="@color/colorOrangePrimaryDark"
+        app:srb_starBorderWidth="1"
+        app:srb_starSize="25dp"
+        app:srb_starsSeparation="25.0dp"
+        app:srb_stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv_ratingBar_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="差评"
+        android:textColor="@color/holo_red_light"
+        android:textSize="@dimen/font_small" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="评价标签"
+        android:textColor="@color/colorHint"
+        android:textSize="@dimen/font_small" />
+    <com.it.jianguo.common.commonwidget.NoScrollGridView
+        android:id="@+id/gv_evalaution"
+        android:layout_width="match_parent"
+        android:verticalSpacing="10dp"
+        android:numColumns="3"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_diglog_white_stoke"
+        android:padding="@dimen/spacing_tiny">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small"
+            android:hint="请在此输入你的宝贵意见"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="500"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_smaller" />
+        <ImageView
+            android:id="@+id/iv_select_pic"
+            android:layout_width="30dp"
+            android:background="@mipmap/icon_camera"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/iv_select_pic"
+            android:layout_marginLeft="10dp"
+            android:text="最多上传5张图片"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_smaller" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/bg_selector_button"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_small" />
+</LinearLayout>

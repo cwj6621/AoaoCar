@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/spacing_tinyer"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/spacing_tinyer"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_order_car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="奇瑞X3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_smaller" />
+        <TextView
+            android:id="@+id/tv_order_cost_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="￥120.20"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_smaller" />
+        <TextView
+            android:id="@+id/tv_order_car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="沪AD5699"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small" />
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="已完成"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_small" />
+    </RelativeLayout>
+   <View
+       android:layout_width="match_parent"
+       android:background="@color/backgroudcolor"
+       android:layout_marginTop="@dimen/spacing_tiny"
+       android:layout_height="@dimen/spacing_mimimum"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:id="@+id/ll_order_icon"
+                android:layout_width="15dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_height="50dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon_order_start_address" />
+            <com.jianguo.aoaocar.view.DashedLineView
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/spacing_mimimumer" />
+            <ImageView
+                android:id="@+id/iv_order_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mimimumer"
+                android:background="@mipmap/icon_order_end_address" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_order_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ll_order_icon"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="06：34 02/12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small" />
+            <TextView
+                android:id="@+id/tv_order_start_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="南京西路"
+                android:textColor="@color/colorHint"
+                android:textSize="@dimen/font_small" />
+            <TextView
+                android:id="@+id/tv_order_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ll_order_icon"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="12：34 03/12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small" />
+            <TextView
+                android:id="@+id/tv_order_end_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="南京东路"
+                android:textColor="@color/colorHint"
+                android:textSize="@dimen/font_small" />
+            </RelativeLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

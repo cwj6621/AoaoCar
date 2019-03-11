@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/widget_navigation_title"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/titleLinearLayout"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="120dp">
+        <RelativeLayout
+            android:id="@+id/rl_buy_detail"
+            android:layout_width="100dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_gray_racharge_border"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/iv_buy_detail"
+                android:layout_width="70dp"
+                android:background="@mipmap/icon_car_detail"
+                android:layout_centerInParent="true"
+                android:layout_height="70dp" />
+        </RelativeLayout>
+
+          <TextView
+              android:id="@+id/iv_buy_name"
+              android:layout_width="wrap_content"
+              android:textSize="@dimen/font_small"
+              android:textColor="@color/black"
+              android:text="@string/app_name"
+              android:layout_toRightOf="@+id/rl_buy_detail"
+              android:layout_margin="@dimen/activity_horizontal_margin"
+              android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/spinnerview"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@+id/rl_buy_detail"
+                android:background="@drawable/bg_diglog_white_stoke"
+                android:paddingLeft="@dimen/spacing_tinyer"
+                android:paddingRight="@dimen/spacing_tinyer"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/spinnerbumen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/font_small"
+                    android:textColor="@color/black"></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/icon_down_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+      <View
+              android:layout_width="match_parent"
+              android:background="@color/colorHint"
+              android:layout_marginTop="@dimen/activity_horizontal_margin"
+              android:layout_height="1dp"></View>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:textSize="@dimen/font_normal"
+               android:textColor="@color/black"
+               android:text="@string/subscribe_amount"
+               android:layout_centerVertical="true"
+               android:layout_alignParentLeft="true"
+               android:layout_height="wrap_content" />
+       <com.jianguo.aoaocar.view.AddNumberView
+           android:id="@+id/add_number"
+           android:layout_width="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_height="wrap_content"/>
+       </RelativeLayout>
+
+    </LinearLayout>
+<Button
+    android:id="@+id/btn_buy_car"
+    android:layout_width="match_parent"
+    android:background="@color/colorOrangePrimary"
+    android:text="@string/sure"
+    android:textColor="@color/white"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:textSize="@dimen/font_smaller"
+    android:layout_height="45dp" />
+</RelativeLayout>

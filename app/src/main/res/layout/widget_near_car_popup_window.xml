@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_near_pot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+    <com.jianguo.aoaocar.view.animation.EasyFlipView
+            android:id="@+id/easyFlipView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:flipDuration="500"
+            app:flipEnabled="true"
+            app:flipOnTouch="true"
+            app:flipType="horizontal">
+            <include
+                layout="@layout/dialog_near_car_detail"></include>
+            <include
+                layout="@layout/dialog_near_car_slide_buttom"></include>
+        </com.jianguo.aoaocar.view.animation.EasyFlipView>
+</LinearLayout>
+

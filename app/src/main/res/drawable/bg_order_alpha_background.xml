@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    gradient节点主要配置起点颜色、终点颜色及中间点的颜色、坐标、渐变效果
+   （0，90，180从左到右渐变，270从上到下渐变）默认从左到右。
+    -->
+    <gradient
+        android:angle="270"
+        android:startColor="#20ffffff"
+        android:centerColor="#e0ffffff"
+        android:endColor="@color/white">
+      </gradient>
+</shape>

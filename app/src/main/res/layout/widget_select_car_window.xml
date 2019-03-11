@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorOrangePrimary"
+        android:gravity="center"
+        android:text="@string/please_select"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_smaller" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/spacing_small"
+                android:paddingRight="@dimen/spacing_small"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing_small"
+        android:paddingTop="@dimen/spacing_small">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="奇瑞X7"
+            android:textColor="@color/colorOrangePrimary"
+            android:textSize="@dimen/font_smaller" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:gravity="center"
+            android:text="自动5座"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_small" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:gravity="center"
+            android:text="*加10/天可指定心仪的车型"
+            android:textColor="@color/colorOrangePrimary"
+            android:textSize="@dimen/font_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:background="@color/backgroudcolor"></View>
+
+            <com.it.jianguo.common.commonwidget.NoScrollGridView
+                android:id="@+id/gv_car_detail"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:divider="@null"
+                android:focusable="false"
+                android:background="@color/white"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="【随机分配】"
+            android:textColor="@color/colorOrangePrimary"
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:background="@color/backgroudcolor"></View>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:paddingTop="@dimen/spacing_tiny"
+          android:paddingBottom="@dimen/spacing_tiny"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:layout_marginTop="@dimen/spacing_mimimumer"
+              android:gravity="center"
+              android:text="闪租价"
+              android:textColor="@color/black"
+              android:textSize="@dimen/font_smaller" />
+          <ImageView
+              android:id="@+id/lv_arrow3"
+              android:layout_width="15dp"
+              android:layout_height="15dp"
+              android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+              android:layout_marginTop="3dp"
+              android:background="@mipmap/icon_right_arrow" />
+          <TextView
+              android:id="@+id/tv_price"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_toLeftOf="@+id/lv_arrow3"
+              android:text="￥220/日均"
+              android:textColor="@color/colorOrangePrimary"
+              android:textSize="@dimen/font_smaller" />
+        <com.it.jianguo.common.commonwidget.NoScrollGridView
+            android:id="@+id/gv_service_detail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="@dimen/spacing_tinyer"
+            android:layout_below="@+id/tv_price"
+            android:divider="@null"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3"
+            android:scrollbars="none" />
+      </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroudcolor"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="门店现付价"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_smaller" />
+
+        <ImageView
+            android:id="@+id/lv_arrow1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_right_arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_tiny"
+            android:layout_toLeftOf="@+id/lv_arrow1"
+            android:text="￥179/日均"
+            android:textColor="@color/colorOrangePrimary"
+            android:textSize="@dimen/font_smaller" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroudcolor"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返现价"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_smaller" />
+        <ImageView
+            android:id="@+id/lv_arrow2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_right_arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_tiny"
+            android:layout_toLeftOf="@+id/lv_arrow2"
+            android:text="￥179/日均"
+            android:textColor="@color/colorOrangePrimary"
+            android:textSize="@dimen/font_smaller" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroudcolor"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="3天打包价"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_smaller" />
+
+        <ImageView
+            android:id="@+id/lv_arrow"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_right_arrow" />
+
+        <TextView
+            android:id="@+id/iv_user_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_tiny"
+            android:layout_toLeftOf="@+id/lv_arrow"
+            android:text="￥171/日均"
+            android:textColor="@color/colorOrangePrimary"
+            android:textSize="@dimen/font_smaller" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroudcolor"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="在线预约价(需3天前预订)"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_smaller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:text="￥162/日均"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_smaller" />
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>

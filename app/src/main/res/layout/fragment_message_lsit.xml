@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/widget_listview_not_data"></include>
+    <com.it.jianguo.common.xlistview.XListView
+        android:id="@+id/lv_listview"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"/>
+</LinearLayout>

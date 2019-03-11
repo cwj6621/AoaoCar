@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/widget_navigation_title"></include>
+
+ <ListView
+     android:id="@+id/lv_use_car"
+     android:layout_width="match_parent"
+     android:divider="@color/backgroudcolor"
+     android:dividerHeight="@dimen/spacing_mimimum"
+     android:background="@color/backgroudcolor"
+     android:scrollbars="none"
+     android:layout_marginTop="@dimen/spacing_mimimum"
+     android:layout_height="wrap_content"></ListView>
+
+    <ListView
+        android:id="@+id/lv_over_car"
+        android:layout_width="match_parent"
+        android:divider="@color/backgroudcolor"
+        android:dividerHeight="@dimen/spacing_mimimum"
+        android:scrollbars="none"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

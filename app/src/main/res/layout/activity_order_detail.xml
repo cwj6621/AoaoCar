@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+     <com.baidu.mapapi.map.MapView
+            android:id="@+id/mv_route"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/iv_order_back"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/icon_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="90dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/spacing_tinyer"
+                android:layout_gravity="bottom"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/bg_order_alpha_background"
+                android:layout_height="80dp">
+                <TextView
+                    android:id="@+id/tv_car_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="车牌:沪A569545"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_contact_service"
+                    android:textColor="@color/colorGreenPrimary"
+                    android:textSize="@dimen/font_smaller"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/contact_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/riv_head"
+                android:layout_width="70dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_crilce_white_shape"
+                android:layout_height="70dp">
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_centerInParent="true"
+                 android:src="@mipmap/iocn_car_model"
+                 android:padding="5dp"
+                 android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent">
+
+  <RelativeLayout
+      android:id="@+id/rl_cricle_view"
+      android:layout_width="160dp"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentTop="true"
+      android:layout_height="160dp">
+    <com.jianguo.aoaocar.view.CrilcleRecordView
+        android:id="@+id/cricleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        app:min_circle_radio="170"
+        app:ring_width="20" />
+      <TextView
+          android:id="@+id/tv_order_cost_money"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="48dp"
+          android:text="租车费用"
+          android:textColor="@color/colorHint"
+          android:textSize="@dimen/font_small" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/activity_horizontal_margin"
+          android:layout_below="@+id/tv_order_cost_money"
+           android:layout_centerHorizontal="true"
+          android:text="￥60.00"
+          android:textColor="@color/colorGreenPrimary"
+          android:textStyle="bold"
+          android:textSize="@dimen/font_normal" />
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_order_record"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+       android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/rl_cricle_view"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/order_record"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_smaller" />
+        <ImageView
+            android:layout_width="15dp"
+            android:background="@mipmap/icon_right_arrow"
+            android:layout_marginLeft="@dimen/spacing_tiny"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/ll_order_line"
+        android:layout_width="match_parent"
+        android:background="@color/backgroudcolor"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_order_detail"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_above="@+id/ll_order_line"
+        android:layout_height="55dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:background="@mipmap/icon_car_oil_number"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_tiny"
+                android:gravity="center"
+                android:text="20公里"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_smaller" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/backgroudcolor"
+            android:layout_gravity="center_vertical"
+            android:layout_height="40dp"></View>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:background="@mipmap/icon_car_driver_number"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_tiny"
+                android:gravity="center"
+                android:text="20分钟"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_smaller" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/backgroudcolor"
+        android:layout_above="@+id/ll_order_detail"
+        android:layout_height="1dp"></View>
+</RelativeLayout>
+</LinearLayout>

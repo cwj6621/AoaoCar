@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_slide_panel_bottom_shape"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="还车请确定已完成一下步骤"
+
+        android:textColor="@color/colorHint"
+        android:textSize="@dimen/font_small" />
+    <ListView
+        android:id="@+id/lv_refund_car_step"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/spacing_tinyer"
+        android:divider="@null"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_contact_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_tinyer"
+        android:gravity="center"
+        android:textColor="@color/colorGreenPrimary"
+        android:text="联系客服"
+        android:textSize="@dimen/font_smaller" />
+    <TextView
+        android:id="@+id/tv_refund_car_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+       android:layout_gravity="center"
+        android:textColor="@color/holo_red_light"
+        android:text="抱歉，还车失败"
+        android:drawablePadding="4dp"
+        android:drawableLeft="@mipmap/icon_sigh"
+        android:textSize="@dimen/font_small" />
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_width="180dp"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="返回（10s）"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_selector_button"
+        android:textSize="@dimen/font_small"
+        android:layout_height="35dp" />
+</LinearLayout>

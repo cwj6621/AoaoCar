@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <com.jianguo.aoaocar.view.silderbottompannel.SlideBottomPanel
+        android:id="@+id/sbv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:sbp_panel_height="500dp"
+        app:sbp_title_height_no_display="270dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_diglog_rediu"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="270dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="充电桩总数"
+                        android:textColor="@color/gray300"
+                        android:textSize="@dimen/font_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="5个"
+                        android:textColor="@color/gray300"
+                        android:textSize="@dimen/font_small" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/gray300"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="可用车位"
+                        android:textColor="@color/gray300"
+                        android:textSize="@dimen/font_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="5个"
+                        android:textColor="@color/gray300"
+                        android:textSize="@dimen/font_small" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/gray300"></View>
+
+                <RelativeLayout
+                    android:id="@+id/rl_pot_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/cost"
+                        android:textColor="@color/gray300"
+                        android:textSize="@dimen/font_small" />
+                    <ImageView
+                        android:id="@+id/lv_cost"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/icon_right_arrow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/lv_cost"
+                        android:gravity="center"
+                        android:text="￥200.0"
+                        android:textColor="@color/gray300"
+                        android:textSize="@dimen/font_small" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/gray300"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/location"
+                        android:textColor="@color/gray300"
+                        android:textSize="@dimen/font_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="网店位于上汽大众中心大厦"
+                        android:textColor="@color/gray300"
+                        android:textSize="@dimen/font_small" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sbp_head"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@drawable/bg_slide_panel_shape"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/tv_pot_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="上海鲲贝信息科技有限公司"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_smaller" />
+
+                <TextView
+                    android:id="@+id/tv_pot_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_pot_name"
+                    android:layout_marginTop="@dimen/spacing_tiny"
+                    android:text="黄浦区北京东路科技京城678号"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/spacing_small" />
+
+                <TextView
+                    android:id="@+id/tv_add_service_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_pot_address"
+                    android:layout_marginTop="@dimen/spacing_tiny"
+                    android:background="@color/colorBlueGreyPrimary"
+                    android:padding="2dp"
+                    android:text="加收服务费"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_tinyer" />
+
+                <LinearLayout
+                    android:id="@+id/rv_navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_navigation" />
+
+                    <TextView
+                        android:id="@+id/tv_pot_ditance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="800米"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_tinyer" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/tv_add_service_free"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/gray300"></View>
+
+                <LinearLayout
+                    android:id="@+id/ll_service_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view2"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/gray300"
+                            android:textSize="@dimen/font_small" />
+
+                        <TextView
+                            android:id="@+id/tv_account_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_mimimumer"
+                            android:gravity="center"
+                            android:text="可用车辆数"
+                            android:textColor="@color/gray300"
+                            android:textSize="@dimen/font_small" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/gray300"></View>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="15"
+                            android:textColor="@color/gray300"
+                            android:textSize="@dimen/font_small" />
+
+                        <TextView
+                            android:id="@+id/tv_sum_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_mimimumer"
+                            android:gravity="center"
+                            android:text="总停车位数"
+                            android:textColor="@color/gray300"
+                            android:textSize="@dimen/font_small" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/gray300"></View>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="24小时"
+                            android:textColor="@color/gray300"
+                            android:textSize="@dimen/font_small" />
+
+                        <TextView
+                            android:id="@+id/tv_sum_rent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_mimimumer"
+                            android:gravity="center"
+                            android:text="网点营业时间"
+                            android:textColor="@color/gray300"
+                            android:textSize="@dimen/font_small" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/ll_service_info"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/gray300"></View>
+
+                <RelativeLayout
+                    android:id="@+id/rl_pot_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/view3">
+
+                    <ImageView
+                        android:id="@+id/iv_pot_notice"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/icon_pot_notice" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_pot_notice"
+                        android:layout_marginLeft="@dimen/spacing_tinyer"
+                        android:gravity="center"
+                        android:text="设置网店有车提醒"
+                        android:textColor="@color/gray300"
+                        android:textSize="@dimen/font_small" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/icon_right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/rl_pot_notice"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/gray300"></View>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_charging_pile" />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.jianguo.aoaocar.view.silderbottompannel.SlideBottomPanel>
+
+    <LinearLayout
+        android:id="@+id/lv_car_list"
+        android:layout_width="match_parent"
+        android:layout_height="362.00dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/bg_diglog_white_rediu"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <ListView
+            android:id="@+id/lv_car"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/backgroudcolor"
+            android:dividerHeight="1dp"></ListView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <TextView
+        android:id="@+id/tv_acr_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="@dimen/font_smaller"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_acr_shop_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/font_small"
+        android:paddingRight="10dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textColor="@color/black" />
+</LinearLayout>

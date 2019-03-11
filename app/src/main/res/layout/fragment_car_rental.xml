@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroudcolor"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_vehicle_license"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_feedbcak_shape"
+        android:layout_margin="@dimen/spacing_small"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@mipmap/icon_add"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/colorHint"
+                android:text="点击上传行驶证图片"
+                android:textSize="@dimen/font_smaller" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_vehicle_license"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent" />
+      </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_tinyer"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="@string/license_plate"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_smaller" />
+                    <EditText
+                        android:id="@+id/et_car_license_plate"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="@dimen/spacing_small"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:hint="请填写"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/font_smaller" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/backgroudcolor"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="@string/car_identification"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_smaller" />
+                    <EditText
+                        android:id="@+id/et_car_identification"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="@dimen/spacing_small"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:hint="请填写"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/font_smaller" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/backgroudcolor"></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="@string/car_engine_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_smaller" />
+                    <EditText
+                        android:id="@+id/et_car_engine_number"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="@dimen/spacing_small"
+                        android:textColor="@color/black"
+                        android:hint="请填写"
+                        android:background="@color/white"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/font_smaller" />
+                </LinearLayout>
+            </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_rental_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_selector_button"
+        android:gravity="center"
+        android:layout_margin="@dimen/button_height_normal"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_smaller" />
+
+</LinearLayout>
